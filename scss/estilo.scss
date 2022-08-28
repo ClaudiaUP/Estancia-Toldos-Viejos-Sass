@@ -1,0 +1,268 @@
+
+@import "variables";
+@import "header";
+
+
+
+
+.padreFotos{
+    
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}    
+    
+.tamañoFoto{
+        width: 350px;
+        height: 300px;
+        margin: 30px;
+        transition: height 0.1s, width 0.8s ;
+} 
+
+.tamañoFoto:hover{
+    height: 400px;
+    width: 350px;
+}
+
+/*------seccionA------*/
+.seccionA{
+    background-color: antiquewhite;
+    
+   
+}
+h2{
+    color: $color-negro;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center; 
+    justify-content: center;
+}
+
+.formato{
+    color: $color-negro;
+    background-color: rgb(241, 246, 247);
+    font-family: 'Ibarra Real Nova', serif;
+    text-align: justify;
+    font-size: $letra25;
+    line-height: 1.6;
+    border: 5px solid blue; 
+    padding: 30px;
+    margin: 30px;   
+}
+
+/*------seccionB-------*/
+.seccionB{
+    background-color: antiquewhite;
+    
+  
+}
+
+.formato2{
+    color: $color-negro;
+    background-color: rgb(241, 246, 247);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: $letra25;
+    line-height: 2;
+    border: 5px solid blue; 
+    padding: 30px;
+    margin: 30px;
+}
+
+
+
+
+.contacto{
+    gap: 20px;
+}
+.separar{
+    gap: 20px;
+ }
+
+  .colorform{
+    background-color: burlywood;
+  } 
+
+ul li{
+    list-style-type: none;
+    lighting-color:black;
+    color: $color-negro;
+    font-size: 14px;
+    font-weight: bold;
+}
+ 
+
+ol li {
+    list-style-type: none;
+    color: $color-negro;
+    font-size: $letra14;
+    font-weight: bold;
+    text-decoration: none;
+ 
+ a{
+font-size: $letra14;
+color: $color-negro;
+text-decoration: none;
+}
+}
+
+h3{
+color: $color-negro;
+}
+
+h4{
+color: $color-negro;
+}
+
+/*-----Maternidad*/
+    
+.seccionMat{
+    background-color: antiquewhite;
+    grid-area: seccionMat;
+}
+
+.formatoMaterni{
+    color: $color-negro;
+    background-color: beige ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: $letra25;
+    line-height: 2;
+    border: 5px solid blue; 
+    padding: 30px;
+    margin: 30px;
+
+}    
+    
+
+
+.alinearFotos{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/*-----Tambo-----*/
+.ubicacionTabla{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 30px 20px 50px;
+   
+}
+.formatoTambo{
+    color: $color-negro;
+    background-color: lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    font-size: 25px;
+    line-height: 2;
+    border: 1px solid rgb(17, 16, 16); 
+    padding: 30px;
+    margin: 30px;
+}
+
+/*----Venta-----*/
+
+.formatoVenta{
+    color:$color-negro;
+    background-color: lightslategray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    font-size: $letra25;
+    line-height: 2;
+    border: 1px solid rgb(17, 16, 16); 
+    padding: 30px;
+    margin: 30px;
+} 
+ .cuadroDeVenta{
+   display: inline;
+    text-align: center;
+     width: 200%;
+    font-size: 15px; 
+
+} 
+
+.agrandarLetraVenta{
+    font-size: 20px;
+    color: cadetblue;
+}
+
+@keyframes texto{
+    0%{
+        opacity: 0;
+    }
+  100%{
+    opacity: 100%;
+  }  
+}
+
+.animacion{
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+    
+/*----Contacto-------*/
+
+
+.contacto{
+    grid-area: contacto;
+
+}
+
+.cuadroContactos{
+    grid-area: cuadroContactos; 
+    background-color: cadetblue;
+    width: 50%;
+    border: 2px black solid;
+    margin: 20px 30px 20px 270px;
+    box-shadow: 5px 5px 5px 5px grey;
+
+} 
+
+
+@media (max-width:500px) {
+
+    .tamañoFoto{
+        width: 90vw;
+        height: auto;
+        margin: 0px;      
+    } 
+
+.navegador ul li a{
+        padding: 0rem 0rem;
+        margin: 0.1rem;
+        
+    }
+
+h1{
+    font-size: 20px;
+} 
+.cuadroContactos{
+    margin: 20px 20px 20px 50px;
+}
+
+ul li{
+    
+    font-size: 10px;
+    
+}
+
+ol li{
+    font-size: 10;
+}
+
+ol li a{
+    font-size: 10;
+}
+
+
+
+    }
+
+
+
+
