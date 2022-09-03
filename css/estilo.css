@@ -51,6 +51,32 @@ nav {
     height: 60px;
     width: 100px; }
 
+.formato {
+  border: 5px solid blue;
+  text-align: justify; }
+
+.formato2 {
+  border: 5px solid blue;
+  text-align: justify; }
+
+.formatoMaterni, .formatoTambo {
+  text-align: justify;
+  line-height: 2;
+  border: 5px solid blue; }
+
+.formatoTambo {
+  color: black;
+  background-color: lightblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  padding: 30px;
+  margin: 30px; }
+
+.formato {
+  background-color: #f0f2f5;
+  font-family: "Ibarra Real Nova";
+  line-height: 1.6; }
+
 .padreFotos {
   background-color: beige;
   display: flex;
@@ -70,7 +96,7 @@ nav {
 
 /*------seccionA------*/
 .seccionA {
-  background-color: antiquewhite; }
+  background-color: white; }
 
 h2 {
   color: black;
@@ -81,27 +107,20 @@ h2 {
 
 .formato {
   color: black;
-  background-color: #f1f6f7;
-  font-family: 'Ibarra Real Nova', serif;
-  text-align: justify;
   font-size: 25px;
-  line-height: 1.6;
-  border: 5px solid blue;
   padding: 30px;
   margin: 30px; }
 
 /*------seccionB-------*/
 .seccionB {
-  background-color: antiquewhite; }
+  background-color: white; }
 
 .formato2 {
   color: black;
-  background-color: #f1f6f7;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
+  background-color: #f0f2f5;
+  font-family: 'Ibarra Real Nova', serif;
   font-size: 25px;
-  line-height: 2;
-  border: 5px solid blue;
+  line-height: 1.6;
   padding: 30px;
   margin: 30px; }
 
@@ -136,21 +155,19 @@ h3 {
   color: black; }
 
 h4 {
-  color: black; }
+  color: black;
+  font-size: 30px; }
 
 /*-----Maternidad*/
 .seccionMat {
   background-color: antiquewhite;
   grid-area: seccionMat; }
 
-.formatoMaterni {
+.formatoMaterni, .formatoTambo {
   color: black;
   background-color: beige;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
   font-size: 25px;
-  line-height: 2;
-  border: 5px solid blue;
   padding: 30px;
   margin: 30px; }
 
@@ -164,17 +181,6 @@ h4 {
   flex-direction: row;
   justify-content: center;
   padding: 20px 30px 20px 50px; }
-
-.formatoTambo {
-  color: black;
-  background-color: lightblue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: justify;
-  font-size: 25px;
-  line-height: 2;
-  border: 1px solid #111010;
-  padding: 30px;
-  margin: 30px; }
 
 /*----Venta-----*/
 .formatoVenta {
@@ -213,13 +219,15 @@ h4 {
 .contacto {
   grid-area: contacto; }
 
+.contTama li {
+  font-size: 30px; }
+
 .cuadroContactos {
   grid-area: cuadroContactos;
-  background-color: cadetblue;
-  width: 50%;
-  border: 2px black solid;
+  width: 60%;
   margin: 20px 30px 20px 270px;
-  box-shadow: 5px 5px 5px 5px grey; }
+  box-shadow: 5px 5px 5px 5px grey;
+  justify-content: center; }
 
 @media (max-width: 500px) {
   .tamañoFoto {

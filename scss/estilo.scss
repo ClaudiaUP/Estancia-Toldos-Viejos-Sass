@@ -1,8 +1,9 @@
 
 @import "variables";
 @import "header";
-
-
+@import "maps";
+@import "extend";
+@import "mixin";
 
 
 .padreFotos{
@@ -14,12 +15,14 @@
     justify-content: center;
 }    
     
+
+
 .tamañoFoto{
-        width: 350px;
-        height: 300px;
-        margin: 30px;
-        transition: height 0.1s, width 0.8s ;
-} 
+    width: 350px;
+    height: 300px;
+    margin: 30px;
+    transition: height 0.1s, width 0.8s;
+}
 
 .tamañoFoto:hover{
     height: 400px;
@@ -27,8 +30,8 @@
 }
 
 /*------seccionA------*/
-.seccionA{
-    background-color: antiquewhite;
+ .seccionA{
+    background-color: white;
     
    
 }
@@ -42,31 +45,24 @@ h2{
 
 .formato{
     color: $color-negro;
-    background-color: rgb(241, 246, 247);
-    font-family: 'Ibarra Real Nova', serif;
-    text-align: justify;
     font-size: $letra25;
-    line-height: 1.6;
-    border: 5px solid blue; 
     padding: 30px;
     margin: 30px;   
 }
 
 /*------seccionB-------*/
 .seccionB{
-    background-color: antiquewhite;
+    background-color: white;
     
   
 }
 
 .formato2{
     color: $color-negro;
-    background-color: rgb(241, 246, 247);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
+    background-color: rgb(240, 242, 245);
+    font-family: 'Ibarra Real Nova', serif;
     font-size: $letra25;
-    line-height: 2;
-    border: 5px solid blue; 
+    line-height: 1.6;
     padding: 30px;
     margin: 30px;
 }
@@ -114,6 +110,7 @@ color: $color-negro;
 
 h4{
 color: $color-negro;
+font-size: 30px;
 }
 
 /*-----Maternidad*/
@@ -127,10 +124,7 @@ color: $color-negro;
     color: $color-negro;
     background-color: beige ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
     font-size: $letra25;
-    line-height: 2;
-    border: 5px solid blue; 
     padding: 30px;
     margin: 30px;
 
@@ -152,17 +146,7 @@ color: $color-negro;
     padding: 20px 30px 20px 50px;
    
 }
-.formatoTambo{
-    color: $color-negro;
-    background-color: lightblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: justify;
-    font-size: 25px;
-    line-height: 2;
-    border: 1px solid rgb(17, 16, 16); 
-    padding: 30px;
-    margin: 30px;
-}
+
 
 /*----Venta-----*/
 
@@ -213,13 +197,16 @@ color: $color-negro;
 
 }
 
+.contTama li{
+    font-size: 30px;
+}
+
 .cuadroContactos{
     grid-area: cuadroContactos; 
-    background-color: cadetblue;
-    width: 50%;
-    border: 2px black solid;
+    width: 60%;
     margin: 20px 30px 20px 270px;
     box-shadow: 5px 5px 5px 5px grey;
+    justify-content: center;
 
 } 
 
