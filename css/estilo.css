@@ -35,7 +35,7 @@ nav {
   margin: 0.5rem;
   transition: all 0.4s linear; }
   .navegador ul li a:hover {
-    background: #0fdf54; }
+    background: #c7e0c7; }
 
 .sacarLinea {
   text-decoration: none; }
@@ -44,7 +44,7 @@ nav {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  background: rosybrown;
+  background: white;
   margin: 5px 10px 10px 10px;
   transition: height 0.1s, width 0.8s; }
   .ponerEnLinea:hover {
@@ -123,6 +123,12 @@ h2 {
   line-height: 1.6;
   padding: 30px;
   margin: 30px; }
+
+/*Footer*/
+.negrita {
+  color: red;
+  font-size: 14px;
+  font-weight: bold; }
 
 .contacto {
   gap: 20px; }
